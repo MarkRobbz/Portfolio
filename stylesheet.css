@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background-color: grey;
+    overflow: auto;
+}
+
+#navigation{
+    float: left;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: blue;
+    
+}
+
+#navigation li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+#colum_one {
+    float: left;
+    background-color: red;
+    overflow: auto;
+}
+
+#colum_two {
+    float: right;
+    width: 60%;
+    background-color: darkred;
+}
+
+.body {
+    background-color: blueviolet;
+}
