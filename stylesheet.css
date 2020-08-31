@@ -17,6 +17,7 @@ nav {
     float: left;
     background-color: red;
     width: 15%;
+    overflow: auto;
 }
 
 main {
@@ -56,3 +57,18 @@ nav li a {
   float: left;
   margin-right: 15px;
 }
+
+@media only screen and (max-width:700px) {
+    /* For mobile phones: */
+    nav{
+        display: none;
+    }
+
+    main{
+    width: 100%;
+    }
+
+    #banner{
+    width: 100%;
+    }
+  }
