@@ -15,9 +15,12 @@
     <div id="banner">
         <p>banner</p>
     </div>
+
+
     <!--<h1>Mark Roberts</h1>-->
     <div id="flexbox-main">
         <nav>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -26,6 +29,7 @@
             </ul>
         </nav>
         <main>
+            <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
             <!--About Me section-->
             <div id="about-me">
                 <h2>About Me</h2>
@@ -89,6 +93,16 @@
             </div>
         </main>
     </div>
+
+    <script>
+        function openNav() {
+          document.getElementsById("sideNav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementsById("sideNav").style.width = "0";
+        }
+        </script>
 </body>
 <footer>
 
