@@ -19,9 +19,10 @@
 
     <!--<h1>Mark Roberts</h1>-->
     <div id="flexbox-main">
-        <nav>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <nav id="myNavBar" class="navBar">
+            
             <ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#qualifications-&-certificates">Certificates</a></li>
@@ -96,11 +97,11 @@
 
     <script>
         function openNav() {
-          document.getElementsById("sideNav").style.width = "250px";
+          document.getElementsByTagName("myNavBar").style.width = "250px";
         }
         
         function closeNav() {
-          document.getElementsById("sideNav").style.width = "0";
+          document.getElementsByTagName("myNavBar").style.width = "0";
         }
         </script>
 </body>
