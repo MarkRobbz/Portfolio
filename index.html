@@ -20,9 +20,8 @@
     <!--<h1>Mark Roberts</h1>-->
     <div id="flexbox-main">
         <nav id="myNavBar" class="navBar">
-            
             <ul>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <button class="closebtn" onclick="closeNav()">X</button>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#qualifications-&-certificates">Certificates</a></li>
@@ -97,12 +96,17 @@
 
     <script>
         function openNav() {
-          document.getElementsByTagName("myNavBar").style.width = "250px";
+            var element = document.getElementsByTagName("nav")[0];
+            //element.style.removeProperty("display");
+            element.style.width = "250px"; //moves the red box to side need fixed tomorrow. 
         }
         
         function closeNav() {
-          document.getElementsByTagName("myNavBar").style.width = "0";
+          var element = document.getElementsByTagName("nav")[0];
+         //element.style.display = "none";
+         element.style.width = "0";
         }
+
         </script>
 </body>
 <footer>

@@ -48,7 +48,7 @@ main {
 
 }
 
-.navBar li a {
+.navBar ul a {
     display: block;
     color: #000;
     padding: 8px 16px;
@@ -60,23 +60,30 @@ main {
   margin-right: 15px;
 }
 
+/* For mobile phones: */
 @media only screen and (max-width:700px) {
-    /* For mobile phones: */
-    /* nav{
-        display: none;
-    }  */
+    
+  
+nav{
+    overflow:auto;
+    float: left;
+    width: 0;
+    /* display: none; */
+}
 
 .navBar ul{
-  width: 0;
+  /* width: 0; */
   position: fixed;
   z-index: 1;
   height: 250px;
   top: 0;
   left: 0;
-  background-color: #111;
-  overflow-x: hidden;
+  background-color: #111 ;
+  /* overflow-x: hidden; */
+  overflow: auto;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 20px;
+  display: hidden;
     }
 
     .navBar ul a {
@@ -84,7 +91,8 @@ main {
         text-decoration: none;
         font-size: 25px;
         color: #818181;
-        display: block;
+        /* display: block; */
+        display: flex;
         transition: 0.3s;
     }
 
