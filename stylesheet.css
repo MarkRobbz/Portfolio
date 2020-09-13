@@ -13,15 +13,6 @@ body {
     
 }
 
-
-
-nav {
-    float: left;
-    background-color: red;
-    width: 15%;
-    
-}
-
 main {
     float: left;
     width: 85%;
@@ -35,10 +26,16 @@ main {
     display: flex;
 }
 
+nav {
+    float: left;
+    background-color: rgb(250, 46, 46);
+    width: 15%;
+    
+}
+
 .navBar ul {
     list-style-type: none;
     float: left;
-    background-color: blue;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -62,39 +59,6 @@ main {
 
 /* For mobile phones: */
 @media only screen and (max-width:700px) {
-    
-  
-nav{
-    overflow:auto;
-    float: left;
-    width: 0;
-    /* display: none; */
-}
-
-.navBar ul{
-  /* width: 0; */
-  position: fixed;
-  z-index: 1;
-  height: 250px;
-  top: 0;
-  left: 0;
-  background-color: #111 ;
-  /* overflow-x: hidden; */
-  overflow: auto;
-  transition: 0.5s;
-  padding-top: 20px;
-  display: hidden;
-    }
-
-    .navBar ul a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        /* display: block; */
-        display: flex;
-        transition: 0.3s;
-    }
 
     main{
     width: 100%;
@@ -102,6 +66,40 @@ nav{
 
     #banner{
     width: 100%;
+    }
+
+    .navBar{
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 50px;  
+    }
+   
+    .navBar ul{
+       width: max-content;
+       
+    }
+
+    .navBar ul a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .closeBtn{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+        
     }
     
 
