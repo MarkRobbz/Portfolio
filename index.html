@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
     <title>Mark Roberts | Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
@@ -16,16 +17,15 @@
         <p>banner</p>
     </div>
 
-
     <!--<h1>Mark Roberts</h1>-->
     <div id="flexbox-main">
         <nav id="myNavBar" class="navBar">
             <button class="closeBtn" onclick="closeNav()">X</button>
             <ul>
-                
                 <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#qualifications-&-certificates">Certificates</a></li>
                 <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
@@ -33,40 +33,51 @@
             <button class="openBtn" onclick="openNav()">☰ Toggle Sidepanel</button>
             <!--About Me section-->
             <div id="about-me">
-                <h2>About Me</h2>
-                <h4>Hello, it's me!</h4>
-                <img src="Images/MarkPlaceholder.jpg" alt="Image of Myself"   height="400" width="300"/>
-                <P>*PLACEHOLDER* Being a part of a generation that relies heavily on technology to complete tasks and awareness of the vital
-                    information this technology’s role holds for business, had got me interested in computers. The world almost
-                    revolves around the use of this innovation because it has become central to commerce and government. When I
-                    studied I.T. for two years at Belfast Metropolitan College, I realised it was something I was good at and could
-                    be fulfilled with in the world of work. Since college, I have been eager to learn more and began a degree in
-                    Computer Science at Queen’s University Belfast.
-                    Studying the Architecture and Networks module at Queen’s Belfast has enabled me to learn many new topics such as
-                    an in-depth look at how we send and receive data across a network using different protocols. My favourite module
-                    of this semester would be web technologies. I really enjoy the creative aspect of this module as we get to build
-                    responsive websites using HTML, CSS and JavaScript. In this module, I have worked steadily while being under
-                    pressure to meet deadlines.
-                    I have advanced my organisational skills as I am required to organise the workload from different modules in
-                    order to complete them on time. Coding with Java in Procedural and Object Orientated programming has allowed me
-                    to improve on my problem-solving skills. This requires me to think through steps strategically to overcome a
-                    difficult task. It is rewarding to complete a challenging program. For instance, one of my assignments required
-                    a program to be created that involved implementing code. It needed to act as a compiler so it would read code
-                    from a file and return the different data types used, reporting any errors with the code.
-                    I completed a week of work experience at an I.T. company called Xperience and was introduced to cloud solutions,
-                    custom relations management (CRM) and accounting where I got to observe the different departments. During this I
-                    picked up team building skills. I got to use problem-solving skills to work independently, such as setting up
-                    new computers for different organisations and connecting them to their servers. I learned the importance of good
-                    communication skills when dealing with customers during my work experience.
-                 </P>
+                <div class="full-col">
+                    <h2 class="section-heading">About Me</h2>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="Images/MarkPlaceholder.jpg" alt="Image of Myself" height="400" width="300" />
+                    </div>
+                    <div class="col-3">
+                        <h4>Hello there.</h4>
+                        <P>
+                            *PLACEHOLDER* Being a part of a generation that relies heavily on technology to complete
+                            tasks and awareness of the vital
+                            information this technology’s role holds for business, had got me interested in computers.
+                            The world almost
+                            revolves around the use of this innovation because it has become central to commerce and
+                            government. When I
+                            studied I.T. for two years at Belfast Metropolitan College, I realised it was something I
+                            was good at and could
+                            be fulfilled with in the world of work. Since college, I have been eager to learn more and
+                            began a degree in
+                            Computer Science at Queen’s University Belfast.
+                            Studying the Architecture and Networks module at Queen’s Belfast has enabled me to learn
+                            many new topics such as
+                            an in-depth look at how we send and receive data across a network using different protocols.
+                            My favourite module
+                            of this semester would be web technologies. I really enjoy the creative aspect of this
+                            module as we get to build
+                            responsive websites using HTML, CSS and JavaScript. In this module, I have worked steadily
+                            while being under
+                            pressure to meet deadlines.
+                        </P>
+                    </div>
+                    <div class="col-3">
+                        <h4>Hobbies and Interest.</h4>
+                    </div>
+                </div>
             </div>
-            <!--Projects section-->
-            <div id="projects">
-                <h2>Projects</h2>
+            <!-- Skills section-->
+            <div id=skills>
+                <h2>Skills</h2>
             </div>
-            <!--qualifications & certificates section-->
-            <div id="qualifications-&-certificates">
-                <h2>Qualifications & Certificates</h2>
+
+            <!--Education section-->
+            <div id="education">
+                <h2>Education</h2>
                 <h3>Qualifications</h3>
                 <h3>Microsoft</h3>
                 <img src="Images/wordCertificate.jpg" height="200" width="300"
@@ -85,6 +96,12 @@
                     alt="Basic java knowledge certificate from Programming Hub.">
                 <hr />
             </div>
+
+            <!--Projects section-->
+            <div id="projects">
+                <h2>Projects</h2>
+            </div>
+
             <!--Contact me section-->
             <div id="contact-me">
                 <h2>Contact Me</h2>
@@ -101,14 +118,13 @@
             //element.style.removeProperty("display");
             element.style.width = "250px"; //moves the red box to side need fixed tomorrow. 
         }
-        
-        function closeNav() {
-          var element = document.getElementsByTagName("nav")[0];
-         //element.style.display = "none";
-         element.style.width = "0";
-        }
 
-        </script>
+        function closeNav() {
+            var element = document.getElementsByTagName("nav")[0];
+            //element.style.display = "none";
+            element.style.width = "0";
+        }
+    </script>
 </body>
 <footer>
 
