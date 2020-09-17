@@ -10,19 +10,19 @@ body {
 #banner {
     height: 400px;
     background-color: aquamarine;
-    
+
 }
 
 main {
     float: left;
     width: 85%;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-left: 10px;
     background-color: darkred;
     overflow: auto;
 }
 
-#flexbox-main{
+#flexbox-main {
     display: flex;
 }
 
@@ -30,7 +30,7 @@ nav {
     float: left;
     background-color: rgb(250, 46, 46);
     width: 15%;
-    
+
 }
 
 .navBar ul {
@@ -53,26 +53,41 @@ nav {
 }
 
 #about-me {
-    width: 100%;   
+    width: 100%;
 }
 
-.full-col{
+#myImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading-contianer {
     width: 100%;
     background-color: blueviolet;
+    margin: 20px;
+    padding: 0;
 }
 
-.row{
+.section-heading {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.row {
+    /*The 3 cols sit inside the row*/
     width: 100%;
     display: flex;
     background-color: aliceblue;
-  
+
 }
-.col-3{
+
+.col-3 {
     width: 33.33333333333333%;
     margin-left: auto;
-    margin-right: auto; 
-    
-    background-color: brown;
+    margin-right: auto;
+    background-color: red;
+    text-align: justify;
 }
 
 
@@ -80,15 +95,15 @@ nav {
 /* For mobile phones: */
 @media only screen and (max-width:700px) {
 
-    main{
-    width: 100%;
+    main {
+        width: 100%;
     }
 
-    #banner{
-    width: 100%;
+    #banner {
+        width: 100%;
     }
 
-    .navBar{
+    .navBar {
         width: 0;
         position: fixed;
         z-index: 1;
@@ -97,12 +112,12 @@ nav {
         background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 50px;  
+        padding-top: 50px;
     }
-   
-    .navBar ul{
-       width: max-content;
-       
+
+    .navBar ul {
+        width: max-content;
+
     }
 
     .navBar ul a {
@@ -114,23 +129,22 @@ nav {
         transition: 0.3s;
     }
 
-    .closeBtn{
+    .closeBtn {
         position: absolute;
         top: 5px;
         right: 5px;
         font-size: 20px;
-        
+
     }
 
-    .row{
+    .row {
         display: block;
     }
 
-    .col-3{
+    .col-3 {
         float: left;
         width: 100%;
-     
     }
-    
 
-  }
+
+}
