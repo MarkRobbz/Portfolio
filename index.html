@@ -19,7 +19,7 @@
     <!--<h1>Mark Roberts</h1>-->
     <div id="flexbox-main">
         <nav id="myNavBar" class="navBar">
-            <button class="closeBtn" onclick="closeNav()">X</button>
+            <button id="navCloseBtn" onclick="closeNav()">X</button>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#skills">skills</a></li>
@@ -30,7 +30,7 @@
         </nav>
         
         <main>
-            <button class="openBtn" onclick="openNav()">☰ Toggle Sidepanel</button>
+            <button id="navOpenBtn" onclick="openNav()">☰ Toggle Sidepanel</button>
             <!--About Me section-->
             <div id="about-me">
                 <div class="heading-container">
@@ -73,15 +73,16 @@
 
             <!-- Skills section-->
             <div id=skills>
-                <h2 class="section-heading">Technical Skills</h2>
-                <div class="row"></div>
+                  <h2 class="section-heading">Technical Skills</h2>
+                 <div class="row">
                     <p></p>
                     <h4 class="skills">Java</h4>
                     <h4 class="skills">JavaScript</h4>
                     <h4 class="skills">C++</h4>
                     <h4 class="skills">MySQL</h4>
-                </div>
-            </div>
+                  </div>
+             </div>
+           
 
             <!--Education section-->
             <div id="education">
@@ -120,19 +121,6 @@
         </main>
     </div>
 
-    <script>
-        function openNav() {
-            var element = document.getElementsByTagName("nav")[0];
-            //element.style.removeProperty("display");
-            element.style.width = "250px"; //moves the red box to side need fixed tomorrow. 
-        }
-
-        function closeNav() {
-            var element = document.getElementsByTagName("nav")[0];
-            //element.style.display = "none";
-            element.style.width = "0";
-        }
-    </script>
 </body>
 <footer>
 
