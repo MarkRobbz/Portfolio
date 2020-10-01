@@ -1,10 +1,9 @@
 
 window.addEventListener('resize', resized);
 
+
 function openNav() {
     var nav = document.getElementsByTagName("nav")[0];
-    //element.style.removeProperty("display");
-    //moves the red box to side need fixed tomorrow. 
     nav.style.width = "55%";
 }
 
