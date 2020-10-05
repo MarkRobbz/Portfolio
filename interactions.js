@@ -24,4 +24,7 @@ function resized(){
 }
 
 
-
+function navScroll(id) {
+    var elmnt = document.getElementById(id);
+    elmnt.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+  }

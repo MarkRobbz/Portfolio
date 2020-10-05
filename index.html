@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="normalise.css">
     <script src="interactions.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 
 <body>
@@ -25,11 +26,11 @@
         <nav id="myNavBar" class="navBar">
             <button id="navCloseBtn" onclick="closeNav()">X</button>
             <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
+                <li><button onclick="navScroll('about-me')">About Me</a></li>
+                <li><button onclick="navScroll('skills')">skills</button></li>
+                <li><button onclick="navScroll('education')">Education</button></li>
+                <li><button onclick="navScroll('projects')">Portfolio</button></li>
+                <li><button onclick="navScroll('contact-me')">Contact Me</button></li>
             </ul>
         </nav>
         
@@ -42,7 +43,7 @@
                 </div>
                 <div class="row">
                     <div class="col-3">
-                        <img src="Images/MarkPlaceholder.jpg" alt="Image of Myself" id="myImage" height="400" width="300" />
+                         <img src="Images/portfolioPhoto.jpg" alt="Image of Myself" id="myImage" height="400" width="300" /> 
                     </div>
                     <div class="col-3">
                         <h4>Hello there.</h4>
@@ -78,12 +79,16 @@
             <!-- Skills section-->
             <div id=skills>
                   <h2 class="section-heading">Technical Skills</h2>
+                  <p>Since begining uiversity i have spent a lot of time developing my programming skills
+                    and enjoy the challange that comes with it. Below is some of the languages i have knowledge
+                    in my favourite so far being C++. I'am constanlty devloping new skills by practing and 
+                    taking online course during my spare time.
+                </p>
                  <div class="row">
-                    <p></p>
-                    <h4 class="skills">Java</h4>
-                    <h4 class="skills">JavaScript</h4>
-                    <h4 class="skills">C++</h4>
-                    <h4 class="skills">MySQL</h4>
+                    <h4 class="skill">Java</h4>
+                    <h4 class="skill">JavaScript</h4>
+                    <h4 class="skill">C++</h4>
+                    <h4 class="skill">MySQL</h4>
                   </div>
              </div>
            
@@ -91,43 +96,56 @@
             <!--Education section-->
             <div id="education">
                 <h2 class="section-heading">Education</h2>
-                <h3>Qualifications</h3>
-                <h3>Microsoft</h3>
-                <img src="Images/wordCertificate.jpg" height="200" width="300"
-                    alt="Microsoft office specialist word 2016 certifcation.">
-                <img src="Images/powerPointCertificate.jpg" height="200" width="300"
-                    alt="Microsoft office specialist PowerPoint 2016 certifcation.">
-                <img src="Images/securityCertificate.jpg" height="200" width="300"
-                    alt="Microsoft technology associate security fundamentals certifcation.">
-                <hr />
-                <h3>Udemy</h3>
-                <img src="Images/DiscreteMathematics.jpg" height="200" width="300"
-                    alt="Discrete Mathematics certificate from Udemy.">
-                <hr />
-                <h3>Programming Hub</h3>
-                <img src="Images/JavaProgrammingHub.jpg" height="200" width="300"
-                    alt="Basic java knowledge certificate from Programming Hub.">
-                <hr />
+                <h3>Queens University Belfast</h3>
+                <p>Master of Engineering <span class="point">•</span> Computer Science</p>
+                <p>Started my studies at Queens University in september 2019, since the start of 
+                    course i have learnt so much that has allowed me to add on to the knowledge and skills 
+                    i gianed from Belfast Met. I am in my seconed year of a 5 year course in which i will be 
+                    looking forward to finding a placement to gain real world skills.
+                </p>
+                <p>Graduating: TBC 2024</p>
+
+                <h3>Belfast Met</h3>
+                  <p>Level 3 Extended Diploma <span class="point">•</span> I.T. </p>
+                  <p>During my time at the met studying I.T helped me to devleop many new 
+                      skills in a variaty of modules from using photoshop to network security or
+                      even web devlopemnt which give me the foundation knowledge to put towards building 
+                      my own website years later.
+                  </p>
+                  <p>Graduated: June 2019</p>
             </div>
 
             <!--Projects section-->
             <div id="projects">
-                <h2 class="section-heading">Projects</h2>
+                <h2 class="section-heading">Portfolio</h2>
+                <i class="fas fa-tools fa-spin" style=" font-size: 6em;  padding: 40px;"></i>
+                <p>WORK IN PROGRESS !</p>
+                
             </div>
 
             <!--Contact me section-->
             <div id="contact-me">
                 <h2 class="section-heading">Contact Me</h2>
-                <a href="https://github.com/MarkRobbz"><i style="font-size:24px" class='fab'>&#xf09b;</i></a>
-                <a href="mailto:markrobb259@gmail.com"><i style="font-size:24px" class="far fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/MarkRoberts259"><i style="font-size:24px" class="fab">&#xf08c;</i></a>
+                <div class="row">
+                  <div class="col-2">
+                    <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="markroberts259"><a class="LI-simple-link" href='https://uk.linkedin.com/in/markroberts259?trk=profile-badge'>Mark Roberts</a>
+                     </div>
+                   </div>
+
+                   <div class="col-2">
+                       <p>Feel free to get in contact with me via any of these methods....</p>
+                    <a href="https://github.com/MarkRobbz"><i style="font-size:60px" class='fab'>&#xf09b;</i></a>
+                    <a href="mailto:markrobb259@gmail.com"><i style="font-size:60px" class="far fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/MarkRoberts259"><i style="font-size:60px" class="fab">&#xf08c;</i></a>
+                   </div>
+                </div>
             </div>
         </main>
     </div>
+<footer>
+<p>©2020</p>
+</footer>
 
 </body>
-<footer>
-
-</footer>
 
 </html>
