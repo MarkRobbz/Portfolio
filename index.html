@@ -7,7 +7,9 @@
     <title>Mark Roberts | Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="normalise.css">
-    <script src="interactions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="oneNav.js"></script>
+    <script type="text/javascript" src="interactions.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
@@ -25,17 +27,21 @@
     <div id="flexbox-main">
         <nav id="myNavBar" class="navBar">
             <button id="navCloseBtn" onclick="closeNav()">X</button>
-            <ul>
-                <li><button onclick="navScroll('about-me')">About Me</a></li>
-                <li><button onclick="navScroll('skills')">skills</button></li>
-                <li><button onclick="navScroll('education')">Education</button></li>
-                <li><button onclick="navScroll('projects')">Portfolio</button></li>
-                <li><button onclick="navScroll('contact-me')">Contact Me</button></li>
+            <ul id="jNav">
+                <li class="current"><a href="#about-me" >About Me</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
+        <div id="openBtnDiv">
+            <button id="navOpenBtn" onclick="openNav()">☰</button>
+            
+        </div>
         
         <main>
-            <button id="navOpenBtn" onclick="openNav()">☰ Toggle Sidepanel</button>
+            
             <!--About Me section-->
             <div id="about-me">
                 <div class="heading-container">
@@ -127,6 +133,7 @@
             <div id="contact-me">
                 <h2 class="section-heading">Contact Me</h2>
                 <div class="row">
+                    
                   <div class="col-2">
                     <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="markroberts259"><a class="LI-simple-link" href='https://uk.linkedin.com/in/markroberts259?trk=profile-badge'>Mark Roberts</a>
                      </div>
@@ -146,7 +153,6 @@
 <footer>
 <p>©2020</p>
 </footer>
-
 </body>
 
 </html>
