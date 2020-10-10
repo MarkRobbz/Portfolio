@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="normalise.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="oneNav.js"></script>
+    <script type="text/javascript" src="jquery.nav.js"></script>
     <script type="text/javascript" src="interactions.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
@@ -26,7 +26,7 @@
     <!--<h1>Mark Roberts</h1>-->
     <div id="flexbox-main">
         <nav id="myNavBar" class="navBar">
-            <button id="navCloseBtn" onclick="closeNav()">X</button>
+            <button id="navCloseBtn" onclick="closeNav()"><i class="fas fa-minus"></i></button>
             <ul id="jNav">
                 <li class="current"><a href="#about-me" >About Me</a></li>
                 <li><a href="#skills">skills</a></li>
@@ -36,7 +36,7 @@
             </ul>
         </nav>
         <div id="openBtnDiv">
-            <button id="navOpenBtn" onclick="openNav()">☰</button>
+            <button id="navOpenBtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
             
         </div>
         
@@ -135,24 +135,28 @@
                 <div class="row">
                     
                   <div class="col-2">
-                    <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="markroberts259"><a class="LI-simple-link" href='https://uk.linkedin.com/in/markroberts259?trk=profile-badge'>Mark Roberts</a>
+                      <div class="centerDiv">
+                    <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="markroberts259" >
+                        <a class="LI-simple-link" href='https://uk.linkedin.com/in/markroberts259?trk=profile-badge'>Mark Roberts</a>
+                     </div>
                      </div>
                    </div>
 
                    <div class="col-2">
-                       <p>Feel free to get in contact with me via any of these methods....</p>
-                    <a href="https://github.com/MarkRobbz"><i style="font-size:60px" class='fab'>&#xf09b;</i></a>
-                    <a href="mailto:markrobb259@gmail.com"><i style="font-size:60px" class="far fa-envelope"></i></a>
-                    <a href="https://linkedin.com/in/MarkRoberts259"><i style="font-size:60px" class="fab">&#xf08c;</i></a>
-                    <a href="MarksCV2020WebsiteVersion.pdf">CV.PDF</a>
+                       <p>
+                           Need to get in contact with me about anything ? Then look no further
+                           as you can reach me through mutiple social media's or even simply just send me an
+                           <a href="mailto:markrobb259@gmail.com">email</a> and i will get back to you as soon as i can.
+                       </p>
+                       <a href="mailto:markrobb259@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                       <a href="https://github.com/MarkRobbz"><i class="fab fa-github-square"></i></a>
+                       <a href="https://twitter.com/MarkRobbz"><i class="fab fa-twitter-square"></i></a>
+                       <a href="www.linkedin.com/in/markroberts259"><i class="fab fa-linkedin"></i></a>
                    </div>
                 </div>
             </div>
         </main>
     </div>
-<footer>
-<p>©2020</p>
-</footer>
 </body>
 
 </html>
