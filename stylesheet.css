@@ -26,7 +26,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-color: aqua;
+    background-color: rgba(57, 130, 247);
    
 }
 
@@ -52,19 +52,19 @@ body {
 main {
     float: left;
     width: 85%;
-    padding-right: 10px;
-    padding-left: 10px;
-    background-color: darkred;
+   padding: 0;
+    background-color: rgba(235, 235, 235);
     overflow: auto;
 }
 
 #flexbox-main {
     display: flex;
+    background-color: rgba(235, 235, 235);
 }
 
 nav {
     float: left;
-    background-color: rgb(250, 46, 46);
+    background-color: rgba(235, 235, 235);
     width: 15%;
 
 }
@@ -78,6 +78,7 @@ nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    background-color: rgb(21, 108, 247);
     
 
 }
@@ -91,7 +92,7 @@ nav {
 }
 
 .current, .navBar ul a:hover {
-    background-color: aqua;
+    background-color: rgb(0, 80, 228);
 }
 
 
@@ -103,32 +104,39 @@ nav {
 
 #about-me {
     width: 100%;
+    padding-bottom: 50px;
+    background-color: rgba(57, 130, 247);
+}
+#about-me .section-heading{
+    background-color: rgba(57, 130, 247);
 }
 
 #myImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10%;
+    border: 3px solid rgb(0, 80, 228);
+    max-width: 100%;
+      height: auto;
 }
 
-.heading-contianer {
-    width: 100%;
-    background-color: blueviolet;
-    margin: 20px;
-    padding: 0;
-}
+
 
 .section-heading {
     text-align: center;
     font-size: 2.5em;
     text-decoration: underline solid;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 40px;
 }
 
 .row {
     /*The 3 cols sit inside the row*/
     width: 100%;
     display: flex;
-    background-color: aliceblue;
+    background-color:rgba(235, 235, 235);
 
 }
 
@@ -137,9 +145,11 @@ nav {
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    background-color: red;
+    background-color: rgba(57, 130, 247);
     text-align: left;
+   
 }
+
 
 .col-3 h4 {
     margin-top: 0;
@@ -147,7 +157,8 @@ nav {
 }
 
 #skills{
-    background-color: aquamarine;
+    background-color: rgba(235, 235, 235);
+    padding-bottom: 50px;
     
 }
 .skill {
@@ -157,11 +168,13 @@ nav {
     margin-right: auto;
     padding: 10px;
     text-align: center;
+    background-color: rgba(235, 235, 235);
    
 }
 
 #education{
-    background-color: cornflowerblue;
+    background-color: rgba(57, 130, 247);
+    padding-bottom: 50px;
 }
 
 .point{
@@ -170,19 +183,21 @@ nav {
 }
 
 #projects{
-    background-color: pink;
+    background-color:;
     text-align: center;
     font-weight: bold;
+    padding-bottom: 50px;
 }
 
 #projects p{
-    margin:  50px;
+    margin: 0;
     padding: 30px;
 }
 
 
 #contact-me{
-    background-color: chartreuse;
+    background-color:rgba(57, 130, 247);
+    padding-bottom: 50px;
 }
 
 #contact-me p{
@@ -195,17 +210,28 @@ nav {
    margin-left: auto;
     margin-right: auto;
     padding: 30px;
-    background-color:purple;
+    background-color: rgba(57, 130, 247);
     text-align: justify;
     
 }
 
 .col-2 i{
+    padding-top: 5px;
    font-size: 3em;
+   color: rgb(0, 80, 228);
+   transition: 1s;
+   
 }
 
+.col-2 i:hover{
+       font-size: 5em;
+      
+}
+
+
+
 .centerDiv{
-    background-color: beige;
+    background-color: rgba(0, 80, 228);
     width: 100%;
     padding: 20px;
     margin-right: auto;
@@ -224,7 +250,7 @@ nav {
     #openBtnDiv{
         float: left;
         width: 10%;
-        background-color: darkorchid;
+        background-color: rgba(235, 235, 235);
     }
 
     #banner {
@@ -292,4 +318,7 @@ nav {
      margin-top: 0;
     }
    
+    #about-me{
+        padding-bottom: 50px;
+    }
 }
