@@ -287,10 +287,9 @@ nav {
 
 .centerDiv {
     background-color: rgba(4, 58, 158);
-    width: 100%;
+    width: fit-content;
     padding: 20px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     text-align: center;
 }
 
