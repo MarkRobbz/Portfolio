@@ -39,12 +39,12 @@ background: rgb(5, 42, 112);
 /*BANNER*/
 #banner {
     height: 100%;
-    background-image: linear-gradient(rgba(57, 130, 247, 0), rgb(57, 130, 247)), url("Images/banner.jpg");
+    background-image: linear-gradient(rgba(57, 130, 247, 0), rgb(120, 159, 222)), url("Images/banner.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-color: rgba(57, 130, 247);
+    background-color: rgb(8, 47, 109);
 
 }
 
@@ -88,12 +88,12 @@ main {
 /*NAVIGATION*/
 nav {
     float: left;
-    background-color: rgba(57, 130, 247);
+    background-color: rgba(32, 70, 131);
     width: 15%;
 
 }
 #myNavBar{
-    background-color: rgba(57, 130, 247);
+    background-color: rgba(25, 54, 101);
 }
 
 .navBar ul {
@@ -105,7 +105,7 @@ nav {
     position: -webkit-sticky;
     position: sticky;
     top: 20px;
-    background-color: rgba(57, 130, 247);
+    background-color: rgb(56, 99, 169);
 }
 
 .navBar ul a {
@@ -119,7 +119,7 @@ nav {
 
 .current,
 .navBar a:hover {
-    background-color: rgba(4, 58, 158);
+    background-color: rgba(120, 159, 222);
     color: rgb(251, 249, 221);;
 }
 
@@ -140,11 +140,11 @@ nav {
 #about-me {
     width: 100%;
     padding-bottom: 50px;
-    background-color: rgba(57, 130, 247);
+    background-color: rgba(120, 159, 222);
 }
 
 #about-me .section-heading {
-    background-color: rgba(57, 130, 247);
+    background-color: rgba(120, 159, 222);
 }
 
  #about-me li{
@@ -156,7 +156,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
-    border: 3px solid rgba(4, 58, 158);
+    border: 3px solid rgba(120, 159, 222);
     max-width: 100%;
     height: auto;
 }
@@ -181,7 +181,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    background-color: rgba(57, 130, 247);
+    background-color: rgba(120, 159, 222);
     text-align: left;
     padding-top: px;
 }
@@ -190,7 +190,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    background-color: rgba(57, 130, 247);
+    background-color: rgb(120, 159, 222);
     text-align: left;
     padding-top: 30px;
 }
@@ -226,7 +226,7 @@ nav {
 
 /*EDUCATION SECTION*/
 #education {
-    background-color: rgba(57, 130, 247);
+    background-color: rgba(120, 159, 222);
     padding-bottom: 50px;
 }
 
@@ -256,7 +256,7 @@ nav {
 
 /*CONTACT ME SECTION*/
 #contact-me {
-    background-color: rgba(57, 130, 247);
+    background-color: rgba(120, 159, 222);
     padding-bottom: 50px;
 }
 
@@ -270,14 +270,14 @@ nav {
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
-    background-color: rgba(57, 130, 247);
+    background-color: rgba(120, 159, 222);
     text-align: justify;
 }
 
 .col-2 i {
     padding-top: 5px;
     font-size: 3em;
-    color: rgba(4, 58, 158);
+    color: rgba(32, 70, 131);
     transition: 1s;
 }
 
@@ -286,7 +286,7 @@ nav {
 }
 
 .centerDiv {
-    background-color: rgba(4, 58, 158);
+    background-color: rgba(120, 159, 222);
     width: fit-content;
     padding: 20px;
     margin: auto;
@@ -310,7 +310,7 @@ nav {
  #openBtnDiv {
         float: left;
         width: 10%;
-        background-color: rgba(57, 130, 247)
+        background-color: rgba(120, 159, 222)
     }
 
     .navBar {
@@ -320,7 +320,7 @@ nav {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgba(57, 130, 247);
+        background-color: rgba(120, 159, 222);
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 15px;
